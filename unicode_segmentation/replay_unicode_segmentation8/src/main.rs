@@ -1,7 +1,6 @@
 extern crate unicode_segmentation;
-// assertion failed
+// utf-8 error: not a char boundary
 fn main() {
-    let mut _local0 = unicode_segmentation::GraphemeCursor::new(14323354221939181254 ,14339398540424824518 ,true);
-    let _ = unicode_segmentation::GraphemeCursor::is_boundary(&mut (_local0) ,"\u{7f}" ,14323354221939181254);
-    let _ = unicode_segmentation::GraphemeCursor::provide_context(&mut (_local0) ,"\0R" ,18410714726934759110);
+    let mut _local0 = unicode_segmentation::GraphemeCursor::new(9042521604759584127 ,6727108446334188925 ,false);
+    let _ = unicode_segmentation::GraphemeCursor::is_boundary(&mut (_local0) ,"}Ԟ" ,9042521604759584125);
 }
