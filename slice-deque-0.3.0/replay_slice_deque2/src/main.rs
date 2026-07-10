@@ -3,11 +3,11 @@ fn main() {
     let mut d = slice_deque::SliceDeque::<i32>::new();
     d.push_back(1);
     d.push_back(2);
-    let (left, right) = d.as_slices();
+    let (left, right) = d.as_mut_slices();
     assert_eq!(left, &[1, 2]);
     assert_eq!(right, &[]);
 
 // the smaller test case that triggers
     // let mut d = slice_deque:: SliceDeque::<i32>::with_capacity(0);
-    // let _ = d.as_slices();
+    // let _ = d.as_mut_slices();
 }
