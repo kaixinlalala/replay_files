@@ -1,0 +1,7 @@
+[package]
+name = "replay_slice_deque3"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+slice-deque = "0.3.0"
